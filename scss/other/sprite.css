@@ -1,0 +1,161 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-case {
+  background-image: url(sprite.png);
+  background-position: -124px -195px;
+  width: 21px;
+  height: 19px;
+}
+.icon-checkmark {
+  background-image: url(sprite.png);
+  background-position: -247px -58px;
+  width: 9px;
+  height: 8px;
+}
+.icon-email-input {
+  background-image: url(sprite.png);
+  background-position: -182px -135px;
+  width: 22px;
+  height: 16px;
+}
+.icon-email {
+  background-image: url(sprite.png);
+  background-position: -109px -236px;
+  width: 16px;
+  height: 12px;
+}
+.icon-fb-hover {
+  background-image: url(sprite.png);
+  background-position: -58px -75px;
+  width: 38px;
+  height: 40px;
+}
+.icon-fb {
+  background-image: url(sprite.png);
+  background-position: -116px -75px;
+  width: 38px;
+  height: 40px;
+}
+.icon-file {
+  background-image: url(sprite.png);
+  background-position: -74px -236px;
+  width: 15px;
+  height: 20px;
+}
+.icon-gh-hover {
+  background-image: url(sprite.png);
+  background-position: -189px -60px;
+  width: 38px;
+  height: 40px;
+}
+.icon-gh {
+  background-image: url(sprite.png);
+  background-position: 0px -135px;
+  width: 38px;
+  height: 40px;
+}
+.icon-graduate {
+  background-image: url(sprite.png);
+  background-position: -89px -135px;
+  width: 27px;
+  height: 18px;
+}
+.icon-iCloud {
+  background-image: url(sprite.png);
+  background-position: -136px -135px;
+  width: 26px;
+  height: 18px;
+}
+.icon-icon-back {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 53px;
+  height: 55px;
+}
+.icon-icon-slash-input {
+  background-image: url(sprite.png);
+  background-position: -58px -135px;
+  width: 11px;
+  height: 40px;
+}
+.icon-key-input {
+  background-image: url(sprite.png);
+  background-position: -165px -195px;
+  width: 21px;
+  height: 19px;
+}
+.icon-locked {
+  background-image: url(sprite.png);
+  background-position: 0px -236px;
+  width: 18px;
+  height: 21px;
+}
+.icon-polaroid {
+  background-image: url(sprite.png);
+  background-position: -84px -195px;
+  width: 20px;
+  height: 20px;
+}
+.icon-school {
+  background-image: url(sprite.png);
+  background-position: -43px -195px;
+  width: 21px;
+  height: 21px;
+}
+.icon-skype {
+  background-image: url(sprite.png);
+  background-position: -206px -195px;
+  width: 19px;
+  height: 19px;
+}
+.icon-slash-icon {
+  background-image: url(sprite.png);
+  background-position: -247px 0px;
+  width: 10px;
+  height: 38px;
+}
+.icon-telephone {
+  background-image: url(sprite.png);
+  background-position: -38px -236px;
+  width: 16px;
+  height: 21px;
+}
+.icon-tw-hover {
+  background-image: url(sprite.png);
+  background-position: -189px 0px;
+  width: 38px;
+  height: 40px;
+}
+.icon-tw {
+  background-image: url(sprite.png);
+  background-position: 0px -75px;
+  width: 38px;
+  height: 40px;
+}
+.icon-unlocked {
+  background-image: url(sprite.png);
+  background-position: 0px -195px;
+  width: 23px;
+  height: 21px;
+}
+.icon-vk-hover {
+  background-image: url(sprite.png);
+  background-position: -131px 0px;
+  width: 38px;
+  height: 40px;
+}
+.icon-vk {
+  background-image: url(sprite.png);
+  background-position: -73px 0px;
+  width: 38px;
+  height: 40px;
+}

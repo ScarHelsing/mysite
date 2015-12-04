@@ -3,6 +3,7 @@
 
 var gulp = require('gulp'),
 	minifyCss = require('gulp-minify-css'),
+	rename = require('gulp-rename'),
 	notify = require('gulp-notify'),
 	autoprefixer = require('gulp-autoprefixer'),
 	connect = require('gulp-connect'),
@@ -16,12 +17,12 @@ var gulp = require('gulp'),
 
 // sprite
 	gulp.task('sprite', function () {
-		var spriteData = gulp.src('images/png/*.png').pipe(spritesmith({
+		var spriteData = gulp.src('app/img/sprite/*.png').pipe(spritesmith({
 			imgName: 'sprite.png',
 			cssName: 'sprite.css',
-			padding: 5
+			padding: 20
 		}));
-		return spriteData.pipe(gulp.dest('img/'));
+		return spriteData.pipe(gulp.dest('app/img/'));
 	});
 
 // server connect
@@ -44,14 +45,8 @@ gulp.task('scss', function () {
 	return gulp.src('scss/*.scss')
 		.pipe(sass())
 		.pipe(autoprefixer())
-		.pipe(gulp.dest('scss/css'))
-});
-
-// concat and minify css
-gulp.task('css', function () {
-	return gulp.src('scss/css/*.css')
-		.pipe(concatCss('style.min.css'))
-		.pipe(minifyCss('style.min.css'))
+		.pipe(minifyCss(''))
+		.pipe(rename('style.min.css'))
 		.pipe(gulp.dest('app/css'))
 		.pipe(connect.reload())
 });
@@ -67,10 +62,11 @@ gulp.task('js', function() {
 
 // watch
 gulp.task('watch', function (){
-	gulp.watch('scss/*.scss', ['scss', 'css'])
+	gulp.watch('scss/*.scss', ['scss'])
+	gulp.watch('scss/other/*.scss', ['scss'])
 	gulp.watch('*.html', ['html'])
 	gulp.watch('js/*js', ['js'])
 });
 
 // default
-gulp.task('default', ['connect', 'html', 'scss', 'css', 'js', 'watch']);
+gulp.task('default', ['connect', 'html', 'scss', 'js', 'watch']);
