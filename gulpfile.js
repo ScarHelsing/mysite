@@ -2,8 +2,7 @@
 "use strict";
 
 var gulp = require('gulp'),
-	minifyCSS = require('gulp-minify-css'),
-	rename = require('gulp-rename'),
+	minifyCss = require('gulp-minify-css'),
 	notify = require('gulp-notify'),
 	autoprefixer = require('gulp-autoprefixer'),
 	connect = require('gulp-connect'),
@@ -11,6 +10,7 @@ var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	minifyHTML= require('gulp-minify-html'),
 	concat = require('gulp-concat'),
+	concatCss = require('gulp-concat-css'),
 	uglify = require('gulp-uglify'),
 	spritesmith = require('gulp.spritesmith');
 
@@ -35,7 +35,7 @@ gulp.task('connect', function() {
 // html
 gulp.task('html', function() {
 	return gulp.src('*.html')
-	.pipe(gulp.dest('app/'))
+	.pipe(gulp.dest('app'))
 	.pipe(connect.reload())
 });
 
@@ -44,9 +44,14 @@ gulp.task('scss', function () {
 	return gulp.src('scss/*.scss')
 		.pipe(sass())
 		.pipe(autoprefixer())
-		.pipe(concat('all.scss'))
-		.pipe(minifyCSS(''))
-		.pipe(rename('style.min.css'))
+		.pipe(gulp.dest('scss/css'))
+});
+
+// concat and minify css
+gulp.task('css', function () {
+	return gulp.src('scss/css/*.css')
+		.pipe(concatCss('style.min.css'))
+		.pipe(minifyCss('style.min.css'))
 		.pipe(gulp.dest('app/css'))
 		.pipe(connect.reload())
 });
@@ -62,10 +67,10 @@ gulp.task('js', function() {
 
 // watch
 gulp.task('watch', function (){
-	gulp.watch('scss/*.scss', ['scss'])
+	gulp.watch('scss/*.scss', ['scss', 'css'])
 	gulp.watch('*.html', ['html'])
 	gulp.watch('js/*js', ['js'])
 });
 
 // default
-gulp.task('default', ['connect', 'html', 'scss', 'js', 'watch']);
+gulp.task('default', ['connect', 'html', 'scss', 'css', 'js', 'watch']);
