@@ -4,74 +4,85 @@
 }
 
 .projects-list-item {
-	overflow: hidden;
-	display: inline-block;
-	width: 168px;
-	min-height: 200px;
 	background-color: #fff;
-	border: 1px solid #b6b6b6;
 	border-radius: 5px;
+	border: 1px solid #b6b6b6;
 	box-shadow: 0 2px 1px rgba(9, 9, 9, 0.07);
-	margin-right: 31px;
+	display: inline-block;
 	margin-bottom: 48px;
+	margin-right: 31px;
+	min-height: 200px;
+	overflow: hidden;
 	vertical-align: top;
+	width: 168px;
 	&:nth-child(3n+3) {
 		margin-right: 0;
 	}
 }
 
 .pic-wrapper {
-	position: relative;
 	height: 122px;
-	&:after {
-		content: '';
-		position: absolute;
-		display: block;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		opacity: 0.41;
+	position: relative;
+	&:before {
 		background-color: #6f6d6d;
-		box-shadow: 0 2px 1px rgba(9, 9, 9, 0.07);
-		transition: .3s;
 		border-top-left-radius: 4px;
 		border-top-right-radius: 4px;
+		box-shadow: 0 2px 1px rgba(9, 9, 9, 0.07);
+		content: '';
+		display: block;
+		height: 100%;
+		left: 0;
+		opacity: 0.41;
+		position: absolute;
+		top: 0;
+		transition: .3s;
+		width: 100%;
 	}
-	&:hover:after {
-		cursor: pointer;
+	&:hover:before {
 		opacity: 0;
 	}
 }
 
+// .pic-link {
+// 	opacity: 1;
+// 	transition: .3s;
+// }
+
 .pic {
-	width: 168px;
-	height: 122px;
+	height: 100%;
+	width: 100%;
 }
 
 .pic-link {
-	display: block;
-	width: 100%;
-	height: 100%;
+	border-radius: 4px;
+	border: 1px dashed #fff;
+	color: #fff;
+	left: 32px;
+	opacity: 0;
+	padding: 6px;
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+	top: 41px;
 }
 
 .link-area {
-	border-top: 1px solid #b6b6b6;
-	width: 100%;
-	min-height: 33px;
 	background-color: #f2f2f2;
+	border-top: 1px solid #b6b6b6;
 	box-shadow: inset 0 -2px 1px rgba(242, 242, 242, 0.5);
-	text-align: center;
+	min-height: 33px;
 	padding: 8px;
+	text-align: center;
+	width: 100%;
 }
 
 .project-link {
-	text-decoration: none;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
 	color: #727070;
 	font-size: 13px;
-	font-weight: 600;
+	font-family: OpenSans-Bold;
 	line-height: 23px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
 	&:hover {
 		text-decoration: underline;
 	}
@@ -79,6 +90,7 @@
 
 .text-area {
 	color: #727070;
+	font-family: OpenSans-Light;
 	font-size: 12px;
 	font-weight: 300;
 	line-height: 16px;
@@ -115,15 +127,15 @@
 }
 
 .add-project-field {
-	position: relative;
-	margin: 0 auto;
-	margin-top: 26px;
-	margin-bottom: 14px;
-	border-radius: 50%;
-	width: 53px;
-	height: 54px;
 	background-color: #f7f7f7;
+	border-radius: 50%;
 	box-shadow: 0 1px 0 #eee, inset 1px 1px 1px 0 rgba(199, 199, 199, 0.75);
+	height: 54px;
+	margin: 0 auto;
+	margin-bottom: 14px;
+	margin-top: 26px;
+	position: relative;
+	width: 53px;
 	&:hover {
 		background-color: #d7d7d7;
 		box-shadow: 0 1px 0 #eee, inset 0.5px 0.9px 0 rgba(199, 199, 199, 0.75);
@@ -131,21 +143,22 @@
 }
 
 .add-project-icon {
-	position: absolute;
-	top: 19px;
-	left: 18px;
-	width: 18px;
-	height: 18px;
-	box-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
 	background-image: url(../img/sprite.png);
 	background-position: -84px -195px;
+	box-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+	height: 18px;
+	left: 18px;
+	position: absolute;
+	top: 19px;
+	width: 18px;
 }
 
 .add-project-text {
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
 	color: #727070;
+	font-family: OpenSans-SemiBold;
 	font-size: 14px;
 	font-weight: 600;
 	line-height: 22px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
 	vertical-align: middle;
 }
