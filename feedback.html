@@ -52,22 +52,22 @@
 				<ul class="nav-list">
 					<li class="nav-list-item"><a class="nav-link passive" href="index.html">Обо мне</a></li>
 					<li class="nav-list-item"><a class="nav-link passive" href="works.html">Мои Работы</a></li>
-					<li class="nav-list-item"><a class="nav-link active" href="feedback.html">Обратная связь</a></li>
+					<li class="nav-list-item last-item"><a class="nav-link active" href="feedback.html">Обратная связь</a></li>
 				</ul>
 				</nav>
 				<div class="contact">
 					<div class="contact-head">Контакты</div>
 					<ul class="contact-list">
-						<li class="contact-item">
+						<li class="contact-list-item">
 							<div class="icon icon-mail"></div>
 							<div class="slash-icon"></div>
-							<a class="contact-link mail" href="mailto:helsingscar@gmail.com">scar@gmail.com</a></li>
-						<li class="contact-item">
+							<a class="contact-link mail" href="mailto:helsingscar@gmail.com">helsingscar@gmail.com</a></li>
+						<li class="contact-list-item">
 							<div class="icon icon-telephone"></div>
 							<div class="slash-icon"></div>
 							<a class="contact-link phone" href="tel:+380958063869">+380958063869</a>
 						</li>
-						<li class="contact-item last-item">
+						<li class="contact-list-item last-item">
 							<div class="icon icon-skype"></div>
 							<div class="slash-icon"></div>
 							<a class="contact-link skype" href="skype:scar_helsing">scar_helsing</a>
@@ -80,12 +80,42 @@
 
 			<!-- ========== CONTENT ==========-->
 			<div class="content">
-				<section class="section works">
+				<section class="section feedback-panel">
 					<h2 class="section-head">У Вас интересный проект? Напишите мне</h2>
-					<div class="section-info works">
-						<ul class="section-list">
-							
-						</ul>
+					<div class="section-info feedback-panel">
+						<form action="#" class="feedback-form" id="feedback">
+
+							<div class="feedback-block feedback-userdata">
+								<div class="userdata">
+									<label class="feedback-label" for="user_name">Имя</label>
+									<input class="feedback-input userdata-input name-input" type="text" id="user_name" placeholder="Как к Вам обращаться">
+								</div>
+
+								<div class="userdata">
+									<label class="feedback-label" for="user_email">Email</label>
+									<input class="feedback-input userdata-input email-input" type="text" id="user_email" placeholder="Куда мне писать">
+								</div>
+							</div>
+
+							<div class="feedback-block feedback-textarea">
+								<label for="message" class="feedback-label">Сообщение</label>
+								<textarea class="feedback-input textarea-input" name="message" id="message" cols="20" rows="6" placeholder="Кратко в чём суть"></textarea>
+							</div>
+
+								<div class="feedback-block feedback-captcha clearfix">
+									<label for="captcha" class="feedback-label">Введите код, указаный на картинке</label>
+									<div class="captcha-wrapper">
+										<img class="captcha-img" src="img/captcha.jpg" height="66" width="173" alt="Captcha">
+									</div>
+									<input class="feedback-input captcha-input" type="text" name="captcha" id="captcha" placeholder="Введите код">
+								</div>
+
+								<div class="feedback-block feedback-butttons clearfix">
+									<input type="submit" value="Отправить" class="feedback-btn feedback-submit">
+									<input type="reset" value="Очистить" class="feedback-btn feedback-reset">
+								</div>
+
+						</form>
 					</div>
 				</section>
 			</div>
@@ -93,8 +123,6 @@
 		</div>
 
 	</div>
-
-
 
 
 	<!-- ========== FOOTER ==========-->

@@ -1,7 +1,3 @@
-.projects {
-	min-height: 600px;
-}
-
 .projects-list {
 	list-style-type: none;
 	padding: 0;
@@ -11,7 +7,7 @@
 	overflow: hidden;
 	display: inline-block;
 	width: 168px;
-	min-height: 238px;
+	min-height: 200px;
 	background-color: #fff;
 	border: 1px solid #b6b6b6;
 	border-radius: 5px;
@@ -39,6 +35,8 @@
 		background-color: #6f6d6d;
 		box-shadow: 0 2px 1px rgba(9, 9, 9, 0.07);
 		transition: .3s;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
 	}
 	&:hover:after {
 		cursor: pointer;
@@ -58,6 +56,7 @@
 }
 
 .link-area {
+	border-top: 1px solid #b6b6b6;
 	width: 100%;
 	min-height: 33px;
 	background-color: #f2f2f2;
@@ -94,7 +93,7 @@
 	min-height: 134px;
 	background-color: white;
 	background-image: linear-gradient(to top, #edebea 0%, #fbf9f9 94%, white 100%);
-	border: 1px solid #b6b6b6;
+	border: 1px solid #c6c6c6;
 	border-radius: 5px;
 	box-shadow: 0 0px 1px 1px rgba(9, 9, 9, 0.09), inset 0 -2px 3px rgba(41, 41, 41, 0.05), inset 0 0 3px #f6f7f7;
 	text-align: center;
@@ -106,8 +105,12 @@
 		box-shadow: inset 0 -2px 3px rgba(41, 41, 41, 0.05), inset 0 0 3px rgba(202, 202, 202, 0.61);
 		.add-project-field {
 			background-color: #d7d7d7;
-			box-shadow: 0 1px 0 0 white, inset 0.5px 0.9px 0 rgba(199, 199, 199, 0.75);
+			box-shadow: 1px 1px 0 0 white, inset 0.5px 0.9px 0 rgba(199, 199, 199, 0.75);
 		}
+	}
+	&:active {
+		box-shadow: inset 0 0 3px rgba(202, 202, 202, 0.61), inset 0 2px 3px rgba(41, 41, 41, 0.15), inset 0 -2px 3px rgba(41, 41, 41, 0.15), inset 2px 0px 3px rgba(41, 41, 41, 0.15), inset -2px 0 3px rgba(41, 41, 41, 0.15);
+		padding-top: 1px;
 	}
 }
 
@@ -120,10 +123,10 @@
 	width: 53px;
 	height: 54px;
 	background-color: #f7f7f7;
-	box-shadow: 0 1px 0 0 #eee, inset 1px 1px 1px 0 rgba(199, 199, 199, 0.75);
+	box-shadow: 0 1px 0 #eee, inset 1px 1px 1px 0 rgba(199, 199, 199, 0.75);
 	&:hover {
 		background-color: #d7d7d7;
-		box-shadow: 0 1px 0 white, inset 0.5px 0.9px 0 rgba(199, 199, 199, 0.75);
+		box-shadow: 0 1px 0 #eee, inset 0.5px 0.9px 0 rgba(199, 199, 199, 0.75);
 	}
 }
 
