@@ -59,8 +59,8 @@
 .pic-link {
 	display: block;
 	border-radius: 4px;
-	color: #eee;
-	border: 1px solid #333;
+	color: #fff;
+	border: 1px dashed #333;
 	background: rgba(111, 109, 109, .5);
 	top: 39px;
 	left: 32px;
@@ -70,10 +70,6 @@
 	text-align: center;
 	text-decoration: none;
 	transform: rotate3d(1,0,0,90deg);
-	background-image: repeating-linear-gradient(-45deg, rgba(0,0,0,.3) 1px, rgba(0,0,0,.3) 2px, transparent 2px, transparent 3px), repeating-linear-gradient(45deg, rgba(0,0,0,.3) 1px, rgba(0,0,0,.3) 2px, transparent 2px, transparent 3px);
-	&:hover {
-		color: orange;
-	}
 }
 
 .link-area {
@@ -102,7 +98,6 @@
 	color: #727070;
 	font-family: OpenSans-Light;
 	font-size: 12px;
-	font-weight: 300;
 	line-height: 16px;
 	padding: 8px 14px;
 	text-align: center;
@@ -167,7 +162,6 @@
 	color: #727070;
 	font-family: OpenSans-SemiBold;
 	font-size: 14px;
-	font-weight: 600;
 	line-height: 22px;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
 	vertical-align: middle;
