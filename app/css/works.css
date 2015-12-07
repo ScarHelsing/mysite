@@ -12,21 +12,26 @@
   box-shadow: 0 2px 1px rgba(9, 9, 9, 0.07);
   display: inline-block;
   margin-bottom: 48px;
-  margin-right: 25px;
+  margin-left: 25px;
   min-height: 200px;
   overflow: hidden;
   vertical-align: top;
   width: 168px; }
-  .projects-list-item:nth-child(3n+3) {
-    margin-right: 0; }
+  .projects-list-item:nth-child(3n+1) {
+    margin-left: 0; }
 
 .pic-wrapper {
+  overflow: hidden;
   height: 122px;
   position: relative; }
   .pic-wrapper:hover .pic-link {
     opacity: 1;
-    transform: rotate3d(0, 0, 0, 0deg);
-    transition: transform .3s; }
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s; }
   .pic-wrapper:before {
     content: '';
     background-color: #6f6d6d;
@@ -39,6 +44,7 @@
     top: 0;
     opacity: 0.41;
     position: absolute;
+    -webkit-transition: opacity .3s;
     transition: opacity .3s;
     width: 100%; }
   .pic-wrapper:hover:before {
@@ -61,7 +67,8 @@
   position: absolute;
   text-align: center;
   text-decoration: none;
-  transform: rotate3d(1, 0, 0, 90deg); }
+  -webkit-transform: rotate3d(1, 0, 0, 90deg);
+          transform: rotate3d(1, 0, 0, 90deg); }
 
 .link-area {
   background-color: #f2f2f2;
@@ -90,11 +97,14 @@
   text-align: center; }
 
 .new-project {
+  margin-left: 25px;
+  padding-top: 26px;
   text-decoration: none;
   display: inline-block;
   width: 166px;
   min-height: 134px;
   background-color: white;
+  background-image: -webkit-linear-gradient(bottom, #edebea 0%, #fbf9f9 94%, white 100%);
   background-image: linear-gradient(to top, #edebea 0%, #fbf9f9 94%, white 100%);
   border: 1px solid #c6c6c6;
   border-radius: 5px;
@@ -103,6 +113,7 @@
   .new-project:hover {
     cursor: pointer;
     background-color: white;
+    background-image: -webkit-linear-gradient(bottom, #c2c0c0 0%, #e3e1e1 86%, #e3e1e1 87%, #e8e7e7 100%);
     background-image: linear-gradient(to top, #c2c0c0 0%, #e3e1e1 86%, #e3e1e1 87%, #e8e7e7 100%);
     border-radius: 5px;
     box-shadow: inset 0 -2px 3px rgba(41, 41, 41, 0.05), inset 0 0 3px rgba(202, 202, 202, 0.61); }
@@ -120,7 +131,6 @@
   height: 54px;
   margin: 0 auto;
   margin-bottom: 14px;
-  margin-top: 26px;
   position: relative;
   width: 53px; }
   .add-project-field:hover {

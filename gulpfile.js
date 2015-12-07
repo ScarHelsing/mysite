@@ -1,28 +1,30 @@
-var gulp = require("gulp"),
-	browserSync = require('browser-sync'),
-	sass = require('gulp-sass');
+// Stop if there are some problems
+"use strict";
 
-gulp.task('server', function () {
-	browserSync({
-		port: 9000,
-		server: {
-			baseDir: 'app'
-		}
+var gulp = require("gulp"),
+		browserSync = require('browser-sync'),
+		autoprefixer = require('gulp-autoprefixer'),
+		sass = require('gulp-sass');
+
+
+gulp.task('server', ['sass'], function() {
+	browserSync.init({
+		server: "./app"
 	});
+	gulp.watch("scss/*.scss", ['sass']);
+	gulp.watch([
+		'html/*.html',
+		'app/css/**/*.css',
+		'app/js/*.js'
+	]).on('change', browserSync.reload);
 });
+
 
 gulp.task('sass', function () {
 	gulp.src('scss/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
+		.pipe(autoprefixer())
 		.pipe(gulp.dest('app/css'));
 });
 
-gulp.task('watch', function () {
-	gulp.watch([
-		'app/*.html',
-		'app/js/**/*.js',
-		'scss/**/*.scss', ['sass']
-	]).on('change', browserSync.reload);
-});
-
-gulp.task('default', ['server', 'sass', 'watch']);
+gulp.task('default', ['server', 'sass']);
