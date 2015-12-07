@@ -5,8 +5,7 @@
 	font-family: Harlow-Solid-Italic;
 	src: url(../fonts/Harlow-Solid-Italic.eot);
 	src: url(../fonts/Harlow-Solid-Italic.eot?#iefix) format('embedded-opentype'),
-			 url(../fonts/Harlow-Solid-Italic.woff2) format('woff2'),
-			 url(../fonts/Harlow-Solid-Italic.woff) format('woff'),
+			 url(../fonts/Harlow-Solid-Italic.woff2) format('woff2'), url(../fonts/Harlow-Solid-Italic.woff) format('woff'),
 			 url(../fonts/Harlow-Solid-Italic.ttf) format('truetype'),
 			 url(../fonts/Harlow-Solid-Italic.svg#Harlow-Solid-Italic) format('svg');
 	font-weight: normal;
@@ -317,7 +316,7 @@ html, body {
 	margin-top: 9px;
 	position: absolute;
 	text-decoration: none;
-	width: 160px;
+	max-width: 160px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
