@@ -1,18 +1,11 @@
 @import "other/works.scss";
 @import "other/feedback.scss";
 
-// @font-face {
-// 	font-family: Harlow-Solid-Italic;
-// 	src: url(../fonts/Harlow-Solid-Italic.ttf);
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
-
 @font-face {
 	font-family: Harlow-Solid-Italic;
 	src: url(../fonts/Harlow-Solid-Italic.eot);
 	src: url(../fonts/Harlow-Solid-Italic.eot?#iefix) format('embedded-opentype'),
-			 // url(../fonts/Harlow-Solid-Italic.woff2) format('woff2'),
+			 url(../fonts/Harlow-Solid-Italic.woff2) format('woff2'),
 			 url(../fonts/Harlow-Solid-Italic.woff) format('woff'),
 			 url(../fonts/Harlow-Solid-Italic.ttf) format('truetype'),
 			 url(../fonts/Harlow-Solid-Italic.svg#Harlow-Solid-Italic) format('svg');
@@ -20,18 +13,11 @@
 	font-style: normal;
 }
 
-// @font-face {
-// 	font-family: OpenSans-Regular;
-// 	src: url(../fonts/OpenSans-Regular.ttf);
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
-
 @font-face {
 		font-family: OpenSans-Regular;
 		src: url(../fonts/OpenSans-Regular.eot);
 		src: url(../fonts/OpenSans-Regular.eot?#iefix) format('embedded-opentype'),
-				 // url(../fonts/OpenSans-Regular.woff2) format('woff2'),
+				 url(../fonts/OpenSans-Regular.woff2) format('woff2'),
 				 url(../fonts/OpenSans-Regular.woff) format('woff'),
 				 url(../fonts/OpenSans-Regular.ttf) format('truetype'),
 				 url(../fonts/OpenSans-Regular.svg#OpenSans-Regular) format('svg');
@@ -39,18 +25,11 @@
 		font-style: normal;
 }
 
-// @font-face {
-// 	font-family: OpenSans-Semibold;
-// 	src: url(../fonts/OpenSans-Semibold.ttf);
-// 	font-weight: bold;
-// 	font-style: normal;
-// }
-
 @font-face {
 		font-family: OpenSans-Semibold;
 		src: url(../fonts/OpenSans-Semibold.eot);
 		src: url(../fonts/OpenSans-Semibold.eot?#iefix) format('embedded-opentype'),
-				 // url(../fonts/OpenSans-Semibold.woff2) format('woff2'),
+				 url(../fonts/OpenSans-Semibold.woff2) format('woff2'),
 				 url(../fonts/OpenSans-Semibold.woff) format('woff'),
 				 url(../fonts/OpenSans-Semibold.ttf) format('truetype'),
 				 url(../fonts/OpenSans-Semibold.svg#OpenSans-Semibold) format('svg');
@@ -58,18 +37,11 @@
 		font-style: normal;
 }
 
-// @font-face {
-// 	font-family: OpenSans-Bold;
-// 	src: url(../fonts/OpenSans-Bold.ttf);
-// 	font-weight: bold;
-// 	font-style: normal;
-// }
-
 @font-face {
 		font-family: OpenSans-Bold;
 		src: url(../fonts/OpenSans-Bold.eot);
 		src: url(../fonts/OpenSans-Bold.eot?#iefix) format('embedded-opentype'),
-				 // url(../fonts/OpenSans-Bold.woff2) format('woff2'),
+				 url(../fonts/OpenSans-Bold.woff2) format('woff2'),
 				 url(../fonts/OpenSans-Bold.woff) format('woff'),
 				 url(../fonts/OpenSans-Bold.ttf) format('truetype'),
 				 url(../fonts/OpenSans-Bold.svg#OpenSans-Bold) format('svg');
@@ -77,18 +49,11 @@
 		font-style: normal;
 }
 
-// @font-face {
-// 	font-family: OpenSans-Light;
-// 	src: url(../fonts/OpenSans-Light.ttf);
-// 	font-weight: lighter;
-// 	font-style: normal;
-// }
-
 @font-face {
 		font-family: 'OpenSans-Light';
 		src: url(../fonts/OpenSans-Light.eot);
 		src: url(../fonts/OpenSans-Light.eot?#iefix) format('embedded-opentype'),
-				 // url(../fonts/OpenSans-Light.woff2) format('woff2'),
+				 url(../fonts/OpenSans-Light.woff2) format('woff2'),
 				 url(../fonts/OpenSans-Light.woff) format('woff'),
 				 url(../fonts/OpenSans-Light.ttf) format('truetype'),
 				 url(../fonts/OpenSans-Light.svg#OpenSans-Light) format('svg');
@@ -258,7 +223,7 @@ html, body {
 }
 
 .nav-link {
-	background-color: #bfbfbf;
+	background-color: #eee;
 	background-image: linear-gradient(0deg, #e9e6e5 0%, #fbf9f9 94%, #ffffff 100%);
 	box-shadow: 0 2px 1px rgba(9, 9, 9, 0.07), inset 0 -2px 3px rgba(41, 41, 41, 0.05), inset 0 0 3px #f6f7f7;
 	color: #727070;
@@ -278,7 +243,6 @@ html, body {
 }
 
 .active {
-	// background: linear-gradient(0deg, #3eb799 0%, #7ee8ce 100%);
 	background-color: #3eb799;
 	background: linear-gradient(to top,#3eb799 10%,#7ee8ce 95%,#a5efdd);
 	border-top: 1px solid #66dbbe;
@@ -346,7 +310,7 @@ html, body {
 	margin-top: 9px;
 	position: absolute;
 	text-decoration: none;
-	width: 155px;
+	width: 160px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -409,14 +373,15 @@ html, body {
 }
 
 .section {
-	position: relative;
-	margin-left: 9px;
-	border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
+	background-color: #eee;
+	background: #f5f4f3 linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
 	margin-bottom: 38px;
-	background: #f5f4f3 linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+	margin-left: 9px;
+	position: relative;
 }
 
 .section-head {
@@ -424,7 +389,6 @@ html, body {
 	background: linear-gradient(to top,#7d7d7d 20%,#a8a8a8 98%,#e6f0f0);
 	border: 1px solid #626262;
 	border-top: 1px solid #a8a8a8;
-
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
@@ -468,7 +432,6 @@ html, body {
 
 .info {
 	float: right;
-	// width: 390px;
 	width: 383px;
 	margin-top: 16px;
 }
@@ -549,6 +512,7 @@ html, body {
 	position: relative;
 	text-align: left;
 	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.45);
+	*border-left: 1px solid #c3c2c2;
 	&:before {
 		content: '';
 		background-color: #fbf9f9;
@@ -566,6 +530,7 @@ html, body {
 		width: 12px;
 		height: 12px;
 		transform: rotate(45deg);
+		*display: none;
 	}
 }
 
@@ -578,21 +543,8 @@ html, body {
 	border-radius: 50%;
 	top: 6px;
 	left: -2px;
+	*display: none;
 }
-
-// &:before {
-// 	border-radius: 50%;
-// 	border: 1px solid #c3c2c2;
-// 	content: '';
-// 	display: block;
-// 	height: 2px;
-// 	left: 6px;
-// 	position: absolute;
-// 	top: 6px;
-// 	width: 2px;
-// }
-
-
 
 .section-list {
 	list-style-type: none;
@@ -709,7 +661,7 @@ html, body {
 }
 
 .footer {
-	background: #fff;
+	background-color: #eee;
 	background: linear-gradient(to bottom, #fff 0%,#f1f1f1 100%);
 	box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
 	min-width: 970px;
@@ -723,7 +675,7 @@ html, body {
 	display: inline-block;
 	font-family: OpenSans-Light;
 	font-size: 0.75em;
-	width: 700px;
+	width: 510px;
 }
 
 .log-in {

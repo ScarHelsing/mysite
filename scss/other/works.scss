@@ -1,3 +1,7 @@
+.section-projects {
+	padding: 20px 30px !important;
+}
+
 .projects-list {
 	list-style-type: none;
 	padding: 0;
@@ -10,7 +14,7 @@
 	box-shadow: 0 2px 1px rgba(9, 9, 9, 0.07);
 	display: inline-block;
 	margin-bottom: 48px;
-	margin-right: 31px;
+	margin-right: 25px;
 	min-height: 200px;
 	overflow: hidden;
 	vertical-align: top;
@@ -26,7 +30,6 @@
 	&:hover {
 		.pic-link {
 			opacity: 1;
-			// top: 41px;
 			transform: rotate3d(0,0,0,0deg);
 			transition: transform .3s;
 		}

@@ -1,0 +1,11 @@
+.ability-item {
+	border-left: 1px solid #c3c2c2;
+}
+
+.ability-item:before {
+	display: none;
+}
+
+.ability-sircle {
+	display: none;
+}
