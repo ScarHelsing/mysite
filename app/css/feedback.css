@@ -13,14 +13,14 @@
 .feedback-userdata {
   margin-bottom: 10px; }
 
-.feedback-label {
-  color: #727070;
+.label {
+  color: #606060;
   display: block;
   font-family: OpenSans-Regular;
   font-size: 14px;
   margin-bottom: 8px; }
 
-.feedback-input {
+.input {
   background-color: #fbfcfd;
   background-image: -webkit-linear-gradient(bottom, rgba(233, 231, 231, 0.6) 0%, transparent 100%);
   background-image: linear-gradient(to top, rgba(233, 231, 231, 0.6) 0%, transparent 100%);
@@ -29,23 +29,26 @@
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 2px 2px rgba(114, 112, 112, 0.1), 0 0 1px rgba(255, 255, 255, 0.15);
   color: #555;
   font-family: OpenSans-Light;
-  font-size: .8em;
+  font-size: .8em; }
+  .input::-webkit-input-placeholder {
+    color: #555; }
+  .input::-moz-placeholder {
+    color: #555; }
+  .input:-ms-input-placeholder {
+    color: #555; }
+  .input::placeholder {
+    color: #555; }
+  .input::-moz-placeholder {
+    color: #555; }
+  .input:focus {
+    outline: none;
+    border: 1px solid #99CCFF; }
+
+.feedback-input {
   height: 41px;
   padding-bottom: 5px\0;
   padding: 10px 11px;
   width: 192px; }
-  .feedback-input::-webkit-input-placeholder {
-    color: #555; }
-  .feedback-input::-moz-placeholder {
-    color: #555; }
-  .feedback-input:-ms-input-placeholder {
-    color: #555; }
-  .feedback-input::placeholder {
-    color: #555; }
-  .feedback-input::-moz-placeholder {
-    color: #555; }
-  .feedback-input:focus {
-    outline: none; }
 
 .userdata-input {
   padding-top: 9px; }
@@ -93,13 +96,14 @@
   margin-top: 20px;
   width: 192px; }
 
-.feedback-btn {
+.button {
+  display: block;
   border-radius: 5px;
   border: 1px solid #c3c2c2;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
   height: 39px;
   width: 123px; }
-  .feedback-btn:focus {
+  .button:focus {
     outline: none; }
 
 .feedback-submit {

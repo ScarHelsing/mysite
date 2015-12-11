@@ -17,15 +17,15 @@
 	margin-bottom: 10px;
 }
 
-.feedback-label {
-	color: #727070;
+.label {
+	color: #606060;
 	display: block;
 	font-family: OpenSans-Regular;
 	font-size: 14px;
 	margin-bottom: 8px;
 }
 
-.feedback-input {
+.input {
 	background-color: #fbfcfd;
 	background-image: linear-gradient(to top, rgba(233, 231, 231, 0.6) 0%, transparent 100%);
 	border-radius: 4px;
@@ -34,19 +34,23 @@
 	color: #555;
 	font-family: OpenSans-Light;
 	font-size: .8em;
-	height: 41px;
-	padding-bottom: 5px\0;
-	padding: 10px 11px;
-	width: 192px;
 	&::placeholder {
 		color: #555;
 	}
 	&::-moz-placeholder{
 		color: #555;
 	}
-	&:focus{ 
-		outline: none;
+	&:focus {
+	outline: none; 
+	border: 1px solid #99CCFF;
 	}
+}
+
+.feedback-input {
+	height: 41px;
+	padding-bottom: 5px\0;
+	padding: 10px 11px;
+	width: 192px;
 }
 
 .userdata-input {
@@ -103,7 +107,8 @@
 	width: 192px;
 }
 
-.feedback-btn {
+.button {
+	display: block;
 	border-radius: 5px;
 	border: 1px solid #c3c2c2;
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);

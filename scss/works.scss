@@ -1,13 +1,13 @@
-.section-projects {
+.section-project {
 	padding: 20px 30px !important;
 }
 
-.projects-list {
+.project-list {
 	list-style-type: none;
 	padding: 0;
 }
 
-.projects-list-item {
+.project-list-item {
 	background-color: #fff;
 	border-radius: 5px;
 	border: 1px solid #b6b6b6;
@@ -15,7 +15,6 @@
 	display: inline-block;
 	margin-bottom: 48px;
 	margin-left: 25px;
-	min-height: 200px;
 	overflow: hidden;
 	vertical-align: top;
 	width: 168px;
@@ -107,23 +106,19 @@
 }
 
 .new-project {
-	margin-left: 25px;
 	padding-top: 26px;
 	text-decoration: none;
 	display: inline-block;
-	width: 166px;
+	width: 100%;
 	min-height: 134px;
 	background-color: white;
 	background-image: linear-gradient(to top, #edebea 0%, #fbf9f9 94%, white 100%);
-	border: 1px solid #c6c6c6;
-	border-radius: 5px;
 	box-shadow: 0 0px 1px 1px rgba(9, 9, 9, 0.09), inset 0 -2px 3px rgba(41, 41, 41, 0.05), inset 0 0 3px #f6f7f7;
 	text-align: center;
 	&:hover {
 		cursor: pointer;
 		background-color: white;
 		background-image: linear-gradient(to top, #c2c0c0 0%, #e3e1e1 86%, #e3e1e1 87%, #e8e7e7 100%);
-		border-radius: 5px;
 		box-shadow: inset 0 -2px 3px rgba(41, 41, 41, 0.05), inset 0 0 3px rgba(202, 202, 202, 0.61);
 		.add-project-field {
 			background-color: #d7d7d7;
@@ -131,8 +126,8 @@
 		}
 	}
 	&:active {
+		padding-top: 27px;
 		box-shadow: inset 0 0 3px rgba(202, 202, 202, 0.61), inset 0 2px 3px rgba(41, 41, 41, 0.15), inset 0 -2px 3px rgba(41, 41, 41, 0.15), inset 2px 0px 3px rgba(41, 41, 41, 0.15), inset -2px 0 3px rgba(41, 41, 41, 0.15);
-		padding-top: 1px;
 	}
 }
 
@@ -170,3 +165,66 @@
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
 	vertical-align: middle;
 }
+
+// ========== ADD-PROJECT-POPUP ==========
+
+.add-project-popup {
+	display: none;
+}
+
+.add-project-form {
+	margin-top: 4px;
+	width: 364px;
+	padding: 22px;
+	min-height: 463px;
+	background-color: #f5f4f3;
+	border: 1px solid #c3c2c2;
+	border-radius: 4px;
+	box-shadow: 0 11px 27px rgba(159, 159, 159, 0.75), inset 0 6px 6px white;
+}
+
+.add-project-label {
+	margin-left: 22px;
+	color: #f8f7f6;
+	font-family: OpenSans-Regular;
+	font-size: 13px;
+}
+
+.project-name {
+	width: 320px !important;
+	margin-bottom: 11px;
+}
+
+.project-image {
+	width: 272px !important;
+	margin-bottom: 11px;
+}
+
+.project-url {
+	width: 320px !important;
+	margin-bottom: 11px;
+}
+
+.description {
+	width: 320px !important;
+	background-color: #fbfcfd;
+	background-image: linear-gradient(to top, rgba(233, 231, 231, 0.2) 0%, transparent 100%);
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 2px 2px rgba(114, 112, 112, 0.1), 0 0 1px rgba(255, 255, 255, 0.15);
+	margin-bottom: 13px;
+}
+
+.add-button {
+	color: #1e7465;
+	float: none !important;
+	font-family: OpenSans-Bold;
+	font-size: 14px;
+	line-height: 0;
+	margin-left: 0;
+	text-align: center;
+	margin: 0 auto !important;
+}
+
+
+// ========== ADD-PROJECT-POPUP ==========

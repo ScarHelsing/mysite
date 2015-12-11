@@ -1,0 +1,137 @@
+@charset "UTF-8";
+.outer-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  white-space: nowrap;
+  text-align: center; }
+  .outer-wrapper:before {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    content: ''; }
+
+.inner-wrapper {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: inline-block;
+  white-space: normal;
+  vertical-align: middle;
+  text-align: left; }
+
+.login-form {
+  position: relative;
+  width: 332px;
+  background-color: #f5f4f3;
+  border: 1px solid #c3c2c2;
+  border-radius: 5px;
+  box-shadow: 0 11px 27px rgba(159, 159, 159, 0.75), inset 0 6px 6px white;
+  padding: 40px;
+  margin: 0 auto; }
+
+.login-form-label {
+  position: absolute;
+  top: -22px;
+  left: 22px;
+  color: #727070;
+  font-family: OpenSans-Regular;
+  font-size: 12px; }
+
+.input-wparper {
+  position: relative;
+  background: url(../img/icon-slash-gray.png) no-repeat 44px 0;
+  margin-bottom: 24px; }
+
+.email-wrapper:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -182px -135px;
+  width: 22px;
+  height: 16px; }
+
+.password-wrapper:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 17px;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -165px -195px;
+  width: 21px;
+  height: 19px; }
+
+.login-input {
+  width: 254px;
+  padding-left: 72px;
+  background: none; }
+
+.remember-me {
+  margin-bottom: 22px; }
+
+.remember {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px; }
+  .remember:focus {
+    outline: none; }
+
+.remember + label {
+  cursor: pointer; }
+
+.remember:not(checked) {
+  position: absolute;
+  opacity: 0; }
+
+.remember:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 25px; }
+
+.remember:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  background-image: -webkit-linear-gradient(bottom, rgba(233, 231, 231, 0.04) 0%, transparent 100%);
+  background-image: linear-gradient(to top, rgba(233, 231, 231, 0.04) 0%, transparent 100%);
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(167, 166, 166, 0.15), inset 0 1px 0 rgba(114, 112, 112, 0.33), 0 0 4px rgba(156, 155, 155, 0.05); }
+
+.remember:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  background-image: url(../img/sprite.png);
+  background-position: -247px -58px;
+  width: 9px;
+  height: 8px;
+  display: none; }
+
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.remember:checked + label:after {
+  display: block; }
+
+/* Показываем получение фокуса. */
+.remember-label {
+  display: inline-block;
+  margin-left: 11px;
+  color: #727070;
+  font-family: OpenSans-Regular;
+  font-size: 14px;
+  font-weight: 400; }
+
+.submit {
+  margin: 0 auto;
+  float: none; }
