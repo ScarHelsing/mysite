@@ -9,7 +9,11 @@ var gulp = require("gulp"),
 
 gulp.task('server', ['sass'], function() {
 	browserSync.init({
-		server: "./app"
+		server: "./app",
+		port: 3001,
+		ui: {
+			port: 8080
+		}
 	});
 	gulp.watch("scss/*.scss", ['sass']);
 	gulp.watch([

@@ -144,10 +144,18 @@
 				<div class="add-project-popup">
 					<label for="add-project-form" class="add-project-label">Добавление проекта</label>
 					<form action="#" class="add-project-form" id="add-project-form">
+					<button type="button" class="add-project-close b-close"></button>
 						<label for="project-name" class="label">Название проекта</label>
 						<input type="text" name="project-name" class="input feedback-input project-name" placeholder="Введите название">
 						<label for="project-image" class="label">Картинка проекта</label>
-						<input type="file" name="project-image" class="input feedback-input project-image" placeholder="Загрузите изображение">
+						<div class="project-upload-image">
+							<input type="text" id="project-filename" class="input feedback-input project-filename" disabled>
+							<div class="project-upload-button">
+								<label class="upload-button">
+									<input type="file" size="1" name="project-image" class="project-image" placeholder="Загрузите изображение">
+								</label>
+							</div>
+						</div>
 						<label for="project-url" class="label">URL проекта</label>
 						<input type="text" name="project-url" class="input feedback-input project-url" placeholder="Добавьте ссылку">
 						<label for="description" class="label">Описание</label>
@@ -175,6 +183,9 @@
 	</footer>
 	<!-- ========== FOOTER ==========-->
 	<script src="bower/jquery/jquery.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.min.js"></script>
+	<script src="js/addProject.js"></script>
+	<script src="js/copyFilename.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

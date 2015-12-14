@@ -173,6 +173,7 @@
 }
 
 .add-project-form {
+	position: relative;
 	margin-top: 4px;
 	width: 364px;
 	padding: 22px;
@@ -181,6 +182,24 @@
 	border: 1px solid #c3c2c2;
 	border-radius: 4px;
 	box-shadow: 0 11px 27px rgba(159, 159, 159, 0.75), inset 0 6px 6px white;
+}
+
+.add-project-close {
+	border: 0;
+	background-color: #eee;
+	position: absolute;
+	background: url(../img/x.png);
+	display: block;
+	top: 8px;
+	right: 7px;
+	width: 13px;
+	height: 13px;
+	&:hover {
+		cursor: pointer;
+	}
+	&:focus {
+		outline: none;
+	}
 }
 
 .add-project-label {
@@ -195,9 +214,60 @@
 	margin-bottom: 11px;
 }
 
-.project-image {
-	width: 272px !important;
+.project-upload-image {
+	position: relative;
+	width: 328px;
+	height: 41px; 
 	margin-bottom: 11px;
+}
+
+.project-upload-button {
+	position: absolute;
+	top: 0;
+	right: 4px;
+	overflow: hidden;
+	width: 54px;
+	height: 41px;
+	background-color: #fbf9f9;
+	background-image: linear-gradient(to top, #e9e6e5 0%, #fbf9f9 94%, white 100%);
+	border: 1px solid #c3c2c2;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.upload-button {
+	background: url(../img/sprite.png);
+	background-position: -122px -125px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	opacity: .8;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.project-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.project-filename {
+	position: relative;
+	width: 276px !important;
+	background-color: #fbf9f9;
+	background-image: linear-gradient(to top, rgba(233, 231, 231, 0.2) 0%, transparent 100%);
+	border: 1px solid #d6d5d3;
+	border-radius: 3px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 2px 2px rgba(114, 112, 112, 0.1), 0 0 1px rgba(255, 255, 255, 0.15);
 }
 
 .project-url {
@@ -225,6 +295,4 @@
 	text-align: center;
 	margin: 0 auto !important;
 }
-
-
 // ========== ADD-PROJECT-POPUP ==========
