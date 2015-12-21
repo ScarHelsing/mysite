@@ -15,6 +15,7 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<!-- bower CSS -->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/works.css">
@@ -94,18 +95,18 @@
 							<div class="feedback-block feedback-userdata">
 								<div class="userdata username">
 									<label class="label" for="user_name">Имя</label>
-									<input class="input feedback-input userdata-input name-input" type="text" id="user_name" placeholder="Как к Вам обращаться">
+									<input class="input feedback-input userdata-input name-input" type="text" id="user_name" qtip-content="введите имя" placeholder="Как к Вам обращаться">
 								</div>
 
 								<div class="userdata useremail">
 									<label class="label" for="user_email">Email</label>
-									<input class="input feedback-input userdata-input email-input" type="text" id="user_email" placeholder="Куда мне писать">
+									<input class="input feedback-input userdata-input email-input" type="text" id="user_email" qtip-content="введите email" qtip-position="right" placeholder="Куда мне писать">
 								</div>
 							</div>
 
 							<div class="feedback-block feedback-textarea">
 								<label for="message" class="label">Сообщение</label>
-								<textarea class="input feedback-input textarea-input" name="message" id="message" cols="20" rows="6" placeholder="Кратко в чём суть"></textarea>
+								<textarea class="input feedback-input textarea-input" name="message" id="message" cols="20" rows="6" qtip-content="ваш вопрос" placeholder="Кратко в чём суть"></textarea>
 							</div>
 
 								<div class="feedback-block feedback-captcha clearfix">
@@ -113,7 +114,7 @@
 									<div class="captcha-wrapper">
 										<img class="captcha-img" src="img/captcha.jpg" alt="Captcha">
 									</div>
-									<input class="input feedback-input captcha-input" type="text" name="captcha" id="captcha" placeholder="Введите код">
+									<input class="input feedback-input captcha-input" type="text" name="captcha" id="captcha" qtip-content="код капчи" qtip-position="right" placeholder="Введите код">
 								</div>
 
 								<div class="feedback-block feedback-butttons clearfix">
@@ -142,6 +143,8 @@
 	</footer>
 	<!-- ========== FOOTER ==========-->
 	<script src="bower/jquery/jquery.js"></script>
-	<script src="js/main.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/feedback.js"></script>
 </body>
 </html>

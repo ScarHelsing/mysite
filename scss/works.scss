@@ -167,7 +167,6 @@
 }
 
 // ========== ADD-PROJECT-POPUP ==========
-
 .add-project-popup {
 	display: none;
 }
@@ -294,5 +293,22 @@
 	margin-left: 0;
 	text-align: center;
 	margin: 0 auto !important;
+}
+
+.server-mes {
+	width: 320px;
+	min-height: 51px;
+	border-radius: 4px;
+	display: none;
+}
+
+.error-mes {
+	background-color: rgba(203, 105, 69, 0.33);
+	border: 1px solid #cb6945;
+}
+
+.success-mes {
+	background-color: rgba(73, 187, 123, 0.33);
+	border: 1px solid #49bb7b;
 }
 // ========== ADD-PROJECT-POPUP ==========
